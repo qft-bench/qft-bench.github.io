@@ -50,9 +50,9 @@
     .panel {
       position: relative;
       z-index: 1;
-      width: min(980px, 90vw);
+      width: min(1000px, 94vw);
       margin-top: 0;
-      padding: 30px 40px 26px;
+      padding: 30px 28px 26px;
       border: 1px solid var(--border);
       border-radius: 28px;
       background: var(--panel);
@@ -79,12 +79,23 @@
       letter-spacing: -0.05em;
     }
 
+    .panel h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4.2vw, 56px);
+      font-weight: 500;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+
     .subtitle {
-      max-width: 860px;
+      max-width: 1100px;
       margin: 20px auto 0;
-      font-size: clamp(18px, 1.8vw, 25px);
-      font-weight: 650;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 500;
       line-height: 1.32;
+      letter-spacing: -0.02em;
     }
 
     .meta {
@@ -167,32 +178,31 @@
   <section class="hero">
     <div class="panel">
       <!-- <div class="eyebrow">Quantum Field Theory · LLM Reasoning · Dataset</div> -->
-      <h1>QFT-Bench:</h1>
-      <div class="subtitle">A Quantum Field Theory Dataset for LLM Reasoning in Theoretical Physics</div>
-      <div class="meta">Authors </div>
+      <h2>LLMs Can Tackle High Energy Theoretical Physics, yet Gaps Remain: </h2>
+      <div class="subtitle">Part I, Quantum Field Theory</div>
       <div class="buttons">
         <a class="button" href="#">Paper</a>
-        <a class="button" href="#">Code</a>
-        <a class="button" href="#">Hugging Face</a>
+        <a class="button" href="#">GitHub</a>
+        <a class="button" href="#">Dataset</a>
+        <a class="button" href="#citation">Ranking</a>
         <a class="button" href="#citation">Cite</a>
       </div>
     </div>
   </section>
 
   <main class="content">
-    <section class="section">
-      <h2>Abstract</h2>
-      <div class="placeholder">Abstract coming soon.</div>
-    </section>
 
+
+      
+    </section>
     <section class="section" id="citation">
       <h2>Citation</h2>
-      <pre>@article{qft75,
-  title   = {QFT-75: A Quantum Field Theory Dataset for LLM Reasoning in Theoretical Physics},
-  author  = {TBD},
-  journal = {TBD},
-  year    = {2026}
-}</pre>
+      <pre>@article{llmscan,
+        title   = {LLMs Can Tackle High Energy Theoretical Physics, yet Gaps Remain: Part I, Quantum Field Theory},
+        author  = {TBD},
+        journal = {TBD},
+        year    = {2026}
+      }</pre>
     </section>
   </main>
 </body>
